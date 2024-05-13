@@ -1,0 +1,58 @@
+/* Estilos para los botones */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonNum {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #1f2325;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.7em;
+    font-size: 1.2em;
+  }
+.botonRed{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: rgb(197, 24, 24);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.7em;
+    font-size: 1.2em;
+}
+.botonMas{
+    width: 50px;
+    height: 110px;
+    margin: 5px;
+    background-color: #1f2325;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.7em;
+    font-size: 1.5em;
+}
+  /* Estilos para la fila */
+  .fila {
+    display: flex;
+    flex-direction: column;
+  }
+  .operatorButton{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Estilos para el contenedor */
+  .calculadora {
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10em;
+    padding: 0.6em;
+    background-color: rgba(67, 67, 126, 0.718);
+    border-radius: 0.7em;
+  }
