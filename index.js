@@ -1,18 +1,17 @@
-const add = function(a,b) {
-	return a+b;
-};
+const display = document.querySelector("#display");
+const buttons = document.querySelectorAll("button");
 
-const subtract = function(a,b) {
-	return a-b;
-};
-
-const multiply = function(nums) {
-  const res = nums.reduce((total, currentItem) =>{
-    return total *= currentItem;
-  },1);
-  return res;
-};
-
-const divide = function(a,b) {
-  return a/b;
-};
+buttons.forEach(btn => {
+    btn.addEventListener("click", () =>{
+        if(btn.id === "="){
+            display.value = eval(display.value);
+        } 
+        else if(btn.id === "AC") {
+            display.value = "";
+        }
+        else if(btn.id === "C") {
+            display.value = display.value.slice(0,-1);
+        }
+        else display.value += btn.id;
+    })
+});
